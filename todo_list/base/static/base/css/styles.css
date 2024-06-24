@@ -1,0 +1,89 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    background-color: #FFF;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fecdf5;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fb5656;
+}
+
+.items-wrapper {
+    padding: 10px;
+}
+
+.solo-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solo-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000
+}
+
+.searchbar {
+    padding: 20px 20px 0px 20px;
+
+}
+
+.searchbar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbar input[type=text] {
+    padding: 10px;
+    border: 2px solid #fecdf5;
+    border-radius: 4px;
+}
+
+.searchbar input[type=submit], .button1 {
+    padding: 5px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid #fecdf5;
+}
+
+
+.add-item a {
+    font-size: 36px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000
+}
+
+.input-form {
+    padding: 20px;
+}
+
+.solo-field {
+    display: flex;
+    padding: 10px;
+}
+
+.solo-field label {
+    width: 45%;
+}

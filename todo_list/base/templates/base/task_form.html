@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="header">
+    <a href="{% url 'tasks' %}">← Go back</a>
+</div>
+
+<div class="input-form">
+    <h3>Edit task</h3>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_div }}
+        </div>
+        
+        <input type="submit" class="button1" value="Submit">
+    </form>
+</div>
+
+
+{% endblock content %}

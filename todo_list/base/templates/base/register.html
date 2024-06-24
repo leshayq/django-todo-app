@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="header">
+  <h1>Register</h1>
+</div>
+
+<div class="input-form">
+  <form method="POST">
+    {% csrf_token %}
+    
+    {% for field in form %}
+    <div class="solo-field">
+      <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+      {{ field }}
+    </div>
+      {% if field.errors %}
+          <div class="error">{{ field.errors }}</div>
+      {% endif %}
+
+    {% endfor %}
+
+    <input type="submit" value="Register" class="button1">
+  </form>
+  <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
+
+{% endblock content %}
